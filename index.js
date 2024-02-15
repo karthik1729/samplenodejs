@@ -3,7 +3,7 @@ import express from 'express';
 const app = express();
 
 app.get('/', (req, res) => {
-  res.send(JSON.stringify(process.env));
+  res.send(process.env);
 });
 
 app.listen(3000, () => {
